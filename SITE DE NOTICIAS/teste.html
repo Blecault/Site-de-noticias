@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal de Notícias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #00264d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #004080;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+        article {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        article h2 {
+            color: #003366;
+        }
+        article p {
+            color: #333;
+        }
+        article img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* Formulário */
+        .form-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        .form-section h2 {
+            color: #003366;
+        }
+        form label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        form button {
+            margin-top: 15px;
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #003366;
+        }
+
+        footer {
+            background-color: #00264d;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Portal de Notícias do Dia</h1>
+        <p>As principais notícias do Brasil e do mundo, em tempo real</p>
+    </header>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Política</a>
+        <a href="#">Esportes</a>
+        <a href="#">Tecnologia</a>
+        <a href="#">Contato</a>
+    </nav>
+
+    <div class="container">
+        <article>
+            <h2>Governo anuncia novas medidas econômicas</h2>
+            <p>O governo federal anunciou hoje um pacote de medidas econômicas que visa impulsionar o crescimento no segundo semestre. As ações incluem incentivos fiscais e programas de investimento em infraestrutura.</p>
+        </article>
+
+        <article>
+            <h2>Time brasileiro vence campeonato sul-americano</h2>
+            <p>Em uma partida emocionante, o time brasileiro conquistou o título da competição sul-americana de futebol. A vitória foi comemorada por milhares de torcedores em todo o país.</p>
+            <img src="https://images.unsplash.com/photo-1518098268026-4e89f1a2cd8e?auto=format&fit=crop&w=900&q=80" alt="Time comemorando vitória no futebol">
+        </article>
+
+        <article>
+            <h2>Atleta quebra recorde nos Jogos Pan-Americanos</h2>
+            <p>Com uma performance incrível, a atleta brasileira quebrou o recorde sul-americano de 100 metros rasos, trazendo orgulho e emoção para os torcedores.</p>
+            <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=900&q=80" alt="Atleta correndo em pista de atletismo">
+        </article>
+
+        <article>
+            <h2>Nova tecnologia promete revolucionar o setor de energia</h2>
+            <p>Pesquisadores revelaram uma nova tecnologia de baterias que pode transformar a forma como armazenamos energia elétrica. A inovação já está em fase de testes com resultados promissores.</p>
+        </article>
+
+        <div class="form-section">
+            <h2>Fale Conosco</h2>
+            <p>Tem alguma sugestão, dúvida ou quer enviar uma notícia? Preencha o formulário abaixo:</p>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Portal de Notícias do Dia - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
+
