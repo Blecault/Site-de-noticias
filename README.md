@@ -2,7 +2,7 @@
 
 Projeto de desenvolvimento Web P1
 
-Projeto intitulado "ZOOM JORNALÍSTICO"
+Projeto intitulado "NOTÍCIA DIRETA"
 
 Desenvolvido por:
 
