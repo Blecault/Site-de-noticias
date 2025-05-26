@@ -2,7 +2,7 @@
 
 Projeto de desenvolvimento Web P1
 
-Projeto intitulado "NOTÍCIA DIRETA"
+Projeto intitulado "NOTÍCIA DIRETA" Um site focado em esportes
 
 Desenvolvido por:
 
