@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia Direta - Futebol</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header {
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section-title {
+            background-color: #28a745;
+            color: white;
+            padding: 5px;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>NOTÍCIA DIRETA</h1>
+    <p>As principais notícias do futebol brasileiro e mundial!</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">NOTÍCIA DIRETA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="teste.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link active" href="futebol.html">Futebol</a></li>
+                <li class="nav-item"><a class="nav-link" href="basquete.html">Basquete</a></li>
+                <li class="nav-item"><a class="nav-link" href="volei.html">Vôlei</a></li>
+                <li class="nav-item"><a class="nav-link" href="tenis.html">Tênis</a></li>
+                <li class="nav-item"><a class="nav-link" href="automobilismo.html">Automobilismo</a></li>
+                <li class="nav-item"><a class="nav-link" href="lutas.html">Lutas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sugestao">Sugira uma Notícia</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+    <!-- Carrossel -->
+    <div id="carouselFutebol" class="carousel slide mb-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src=https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/01/apresentacao-neymar-santos-3-e1738367822744.jpg?w=1200&h=900&crop=1 class="d-block w-100" alt="Neymar" width="1170" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Neymar volta a jogar no Santos</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=https://imagens.ebc.com.br/yhUzN7QtFR5m42U7HjHczKwYkJY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2025/05/26/ancelotti01.jpg?itok=To-g0CjE class="d-block w-100" alt="Copa do Mundo" width="1170" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Carlo Ancelotti é apresentado pela CBF e faz primeira convocação</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src=https://cdn.s1live.com/posts/22-05-2025-16-28-37-1538-10242.jpg class="d-block w-100" alt="Flamengo" width="1170" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Flamengo vence o time do palmeiras com o placar de 2x0</h5>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFutebol" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFutebol" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="section-title">Notícias Recentes</div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Palmeiras anuncia novo reforço para a temporada</h5>
+                    <p class="card-text">Meia uruguaio chega com contrato de três anos e promete reforçar o elenco de Abel Ferreira.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Champions League: semifinais definidas</h5>
+                    <p class="card-text">Real Madrid enfrenta o Manchester City e o PSG encara o Bayern de Munique nas semifinais.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Seleção brasileira divulga convocação para Copa América</h5>
+                    <p class="card-text">Lista traz surpresas e jovens talentos que ganham chance com o novo técnico.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="section-title">Mais Lidas</div>
+            <ul class="list-group">
+                <li class="list-group-item">Brasileirão: veja a tabela atualizada</li>
+                <li class="list-group-item">Messi fala sobre aposentadoria</li>
+                <li class="list-group-item">Copa do Brasil define confrontos das oitavas</li>
+                <li class="list-group-item">Cristiano Ronaldo supera marca histórica</li>
+                <li class="list-group-item">Torcida do Corinthians protesta no CT</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Sugestão -->
+    <div class="row mt-5" id="sugestao">
+        <div class="col-12">
+            <div class="section-title">Sugira uma Notícia</div>
+            <p>Tem uma notícia quente sobre futebol? Envie pra gente!</p>
+            <form onsubmit="event.preventDefault(); alert('Obrigado pela sugestão!'); this.reset();">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="titulo" class="form-label">Título da Sugestão</label>
+                    <input type="text" class="form-control" id="titulo" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Descrição</label>
+                    <textarea class="form-control" id="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Notícia Direta - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>
+
