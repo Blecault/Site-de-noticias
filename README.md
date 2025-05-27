@@ -2,7 +2,7 @@
 
 Projeto de desenvolvimento Web P1
 
-Projeto intitulado "Pódio online" Um site focado em esportes
+Projeto intitulado "Notícia direta" Um site focado em esportes
 
 Desenvolvido por:
 
