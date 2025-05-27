@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        /* Estilo geral */
         body {
             background-color: #f2f2f2;
             font-family: Arial, Helvetica, sans-serif
@@ -35,7 +34,15 @@
             margin-top: 20px;
             font-size: 18px;
         }
-
+        .list-group-item {
+            cursor: pointer;
+            transition: 0.6s;
+        }
+        .list-group-item:hover {
+            background-color: #E57206;
+            transition: 0.6s;
+            color: white;
+        }
         footer {
             background-color: #111;
             color: white;
@@ -53,8 +60,6 @@
     </style>
 </head>
 <body>
-
-    <!-- Cabeçalho do site -->
     <header>
         <h1>NOTÍCIA DIRETA</h1>
         <p>Tudo que rola no mundo do basquete!</p>
@@ -67,7 +72,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <!-- Links para as páginas -->
                     <li class="nav-item"><a class="nav-link" href="teste.html">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="futebol.html">Futebol</a></li>
                     <li class="nav-item"><a class="nav-link active" href="basquete.html">Basquete</a></li>
@@ -142,34 +146,46 @@
                 </ul>
             </div>
         </div>
-        <div class="row mt-5" id="sugestao">
-            <div class="col-12">
-                <div class="section-title">Sugira uma Notícia</div>
-                <p>Tem alguma informação legal sobre basquete? Manda pra gente!</p>
-                <form onsubmit="event.preventDefault(); alert('Valeu pela dica!'); this.reset();">
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="titulo" class="form-label">Título da Sugestão</label>
-                        <input type="text" class="form-control" id="titulo" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensagem" class="form-label">Descrição</label>
-                        <textarea class="form-control" id="mensagem" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-dark">Enviar</button>
-                </form>
+        </div>
+        <div class="container mt-5">
+            <h3 class="mb-4">Vídeos em Destaque</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <a href=https://youtu.be/CjDb9AzKCNQ?si=XhuBh7Jqef0jsa1E target="_blank" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <img src=https://www.reuters.com/resizer/v2/YTE2ORHGVNM4ZDVZFGBSVFHR5A.jpg?auth=2d43810ccb4b6e7b1490fad62fa3976beb40daf2f2ef786a126ad92e9795d5c9&width=4024&quality=80 class="card-img-top" alt="" height="290">
+                            <div class="card-body">
+                                <h5 class="card-title">Shai dá assistência mesmo caído no chão e impressiona em vitória do Thunder</h5>
+                                <p class="card-text">Astro do Oklahoma City Thunder liderou a vitória da franquia sobre o Minnesota Timberwolves com 40 pontos no jogo 4 da final do Oeste.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=https://youtu.be/xyKs8-b4xxg?si=v1HAb54FI9NgthVn target="_blank" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <img src=https://s2-ge.glbimg.com/MKrdu3G-VoEWe0DvA4V9zhajY2U=/0x0:2047x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/4/W/Ap3S3zSdOQOWkmHpQRvg/54546782127-941f0222be-k.jpg class="card-img-top" alt="" height="290">
+                            <div class="card-body">
+                                <h5 class="card-title">Minas vira no fim, bate Bauru Basket e fica a uma vitória da final do NBB</h5>
+                                <p class="card-text">Mineiros revertem desvantagem de oito pontos no quarto período e abrem 2 a 0 na semifinal</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href=https://youtu.be/K-fEAsGxyFw?si=gS4cr7haSUjFzZpQ target="_blank" class="text-decoration-none text-dark">
+                        <div class="card h-100">
+                            <img src=https://s2-ge.glbimg.com/qRT1Ctd4uz3dz8-hzLdpNHkkOvY=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/Y/c/T0B5h4TayFxXXe1Wbz5w/gettyimages-2217047749.jpg class="card-img-top" alt="" height="290">
+                            <div class="card-body">
+                                <h5 class="card-title">Finais do Leste têm três jogos decididos por seis pontos ou menos pela primeira vez desde 2009</h5>
+                                <p class="card-text">Com placares apertados até aqui, disputa entre Knicks e Pacers é a mais acirrada em uma final de conferência em 16 anos</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-
-    <!-- Rodape -->
     <footer>
         <p>&copy; 2025 Notícia Direta - Todos os direitos reservados</p>
     </footer>

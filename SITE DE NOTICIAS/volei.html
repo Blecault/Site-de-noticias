@@ -142,38 +142,3 @@
             </ul>
         </div>
     </div>
-
-    <!-- Sugestão -->
-    <div class="row mt-5" id="sugestao">
-        <div class="col-12">
-            <div class="section-title">Sugira uma Notícia</div>
-            <p>Tem alguma informação quente do mundo do vôlei? Compartilhe conosco!</p>
-            <form onsubmit="event.preventDefault(); alert('Obrigado pela sugestão!'); this.reset();">
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="titulo" class="form-label">Título da Sugestão</label>
-                    <input type="text" class="form-control" id="titulo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensagem" class="form-label">Descrição</label>
-                    <textarea class="form-control" id="mensagem" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
-            </form>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2025 Notícia Direta - Todos os direitos reservados</p>
-</footer>
-
-</body>
-</html>
