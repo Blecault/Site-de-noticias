@@ -143,33 +143,45 @@
         </div>
     </div>
 
-    <!-- Sugestão -->
-    <div class="row mt-5" id="sugestao">
-        <div class="col-12">
-            <div class="section-title">Sugira uma Notícia</div>
-            <p>Tem alguma novidade do mundo das lutas? Envie sua sugestão abaixo!</p>
-            <form onsubmit="event.preventDefault(); alert('Obrigado pela sugestão!'); this.reset();">
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="titulo" class="form-label">Título da Sugestão</label>
-                    <input type="text" class="form-control" id="titulo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensagem" class="form-label">Descrição</label>
-                    <textarea class="form-control" id="mensagem" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
-            </form>
+<div class="container mt-5">
+        <h3 class="mb-4">Vídeos em Destaque</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="https://www.youtube.com/watch?v=2mM0zryktAk" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="https://static.wixstatic.com/media/20b23c_d40b35741de24690932126f7db2e1a78~mv2.jpg/v1/fill/w_980,h_490,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/20b23c_d40b35741de24690932126f7db2e1a78~mv2.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Mãe de BJ Penn pede ordem de restrição contra o ex-lutador.</h5>
+                            <p class="card-text">Lorraine Shin solicitou uma medida protetiva após alegar sofrer "abuso psicológico extremo" pelo filhos</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.youtube.com/shorts/df0_QVu2CFI" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="https://image-cdn.essentiallysports.com/wp-content/uploads/NUML4TLPQJDJDNFOSZP4QCNYOU.jpg">
+                        <div class="card-body">
+                            <h5 class="card-title">Lutador com 110 derrotas na carreira diz que poderia estar no UFC</h5>
+                            <p class="card-text">Jay "Hurricane" Ellis se encontra em uma sequência de 17 reveses seguidos - a última vitória do americano foi em 2021, quando finalizou o brasileiro Rodrigo Almeida no primeiro assalto</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.youtube.com/watch?v=n2H3q4rkIF0" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="https://www.jornalfolhadoestado.com/images/a/63151/b2ap3_large_mcgregorufc22.jpeg">
+                        <div class="card-body">
+                            <h5 class="card-title">Conor McGregor se aventura no futebol e é campeão de liga amadora</h5>
+                            <p class="card-text">Lutador irlandês, que veste a camisa 10 do Black Forge FC, conquista vitória na decisão do campeonato ao derrotar o Mountview CFC por 4 a 3</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-</div>
+
 
 <footer>
     <p>&copy; 2025 Notícia Direta - Todos os direitos reservados</p>
