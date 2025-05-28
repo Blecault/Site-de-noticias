@@ -52,6 +52,28 @@
             background-color: rgba(0, 0, 0, 0.4);
             padding: 10px;
             border-radius: 5px;
+        } 
+        .col {
+            transition: 0.6s;
+            margin-top: 20px;
+        }
+        .col:hover {
+            transform: scale(1.05);
+            transition: 0.6s;
+        }
+        .mb-3 {
+            transition: 0.6s;
+            margin-top: 15px;
+        }
+        .mb-3:hover {
+            transform: scale(1.05);
+            transition: 0.6s;
+            background-color: #006400;
+            
+            color: white;
+        }
+        .section-title {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -70,78 +92,82 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="teste.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="futebol.html">Futebol</a></li>
                     <li class="nav-item"><a class="nav-link" href="basquete.html">Basquete</a></li>
                     <li class="nav-item"><a class="nav-link" href="volei.html">Vôlei</a></li>
                     <li class="nav-item"><a class="nav-link active" href="tenis.html">Tênis</a></li>
                     <li class="nav-item"><a class="nav-link" href="automobilismo.html">Automobilismo</a></li>
                     <li class="nav-item"><a class="nav-link" href="lutas.html">Lutas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sugestao">Sugira uma Notícia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sugestao">Sugira uma Notícia</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container mt-4">
-        <!-- Carrossel -->
-        <div id="carouselTenis" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://tenisbrasil.uol.com.br/wp-content/uploads/2025/05/djokovic-genebra-vibra-2025.jpg" class="d-block w-100" alt="Djokovic campeão" width="1170" height="700">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Djokovic conquista mais um Grand Slam e amplia recordes</h5>
+    <main class="container mt-4">
+        <section id="destaques">
+            <div id="carouselTenis" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://tenisbrasil.uol.com.br/wp-content/uploads/2025/05/djokovic-genebra-vibra-2025.jpg" class="d-block w-100" alt="Djokovic campeão" width="1170" height="700">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Djokovic conquista mais um Grand Slam e amplia recordes</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://s2-ge.glbimg.com/XDymAHBiyTLvWNbAXH2yFGILLTw=/0x0:5653x3820/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/Y/W/hIkn9AQB6CA4FRA2JMtw/2025-05-25t171041z-1603713863-up1el5p1bprmd-rtrmadp-3-tennis-frenchopen.jpg" class="d-block w-100" alt="Nadal" width="1170" height="700">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nadal emocionado após receber grande homenagem</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://s2-ge.glbimg.com/sK8d6na_VB6ZkMw9Yn469EnzSAA=/0x0:2214x1677/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/P/r/oBAUhpQcau2Vui7dvklA/2025-04-26t201019z-747858105-up1el4q1k16e7-rtrmadp-3-tennis-madrid.jpg" class="d-block w-100" alt="João Fonseca" width="1170" height="700">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>João Fonseca estreia muito bem em Campeonato</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://s2-ge.glbimg.com/XDymAHBiyTLvWNbAXH2yFGILLTw=/0x0:5653x3820/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/Y/W/hIkn9AQB6CA4FRA2JMtw/2025-05-25t171041z-1603713863-up1el5p1bprmd-rtrmadp-3-tennis-frenchopen.jpg" class="d-block w-100" alt="Nadal" width="1170" height="700">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Nadal emocionado após receber grande homenagem</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://s2-ge.glbimg.com/sK8d6na_VB6ZkMw9Yn469EnzSAA=/0x0:2214x1677/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/P/r/oBAUhpQcau2Vui7dvklA/2025-04-26t201019z-747858105-up1el4q1k16e7-rtrmadp-3-tennis-madrid.jpg" class="d-block w-100" alt="João Fonseca" width="1170" height="700">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>João Fonseca estreia muito bem em Campeonato</h5>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTenis" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTenis" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTenis" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselTenis" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
+        </section>
 
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="section-title">Notícias Recentes</div>
+        <section class="row">
+            <section class="col-lg-8">
+                <h2 class="section-title">Notícias Recentes</h2>
 
-                <div class="card mb-3">
+                <article class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Nadal planeja retorno para a próxima temporada</h5>
                         <p class="card-text">Espanhol pode anunciar volta nas quadras de saibro em 2026, segundo equipe médica.</p>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwja_YXz_8aNAxUlILkGHcB9PAoQFnoECB0QAQ&url=https%3A%2F%2Fwww.footboom1.com%2Fbr%2Fnews%2Ftennis%2F2586113-rafael-nadal-s-comeback-could-rekindle-rivalry-with-federer-and-djokovic&usg=AOvVaw0eZoFDO5Y_yHHTjj3ahlex&opi=89978449" class="stretched-link"></a>
                     </div>
-                </div>
+                </article>
 
-                <div class="card mb-3">
+                <article class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Bia Haddad segue firme em Wimbledon</h5>
                         <p class="card-text">Brasileira vence mais uma e se aproxima das quartas de final do torneio britânico.</p>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwic6PSWgMeNAxXwJrkGHZnnJYEQFnoECCUQAQ&url=https%3A%2F%2Fwww.espn.com.br%2Ftenis%2Fartigo%2F_%2Fid%2F13863544%2Fbia-haddad-vence-estreia-avanca-segunda-rodada-wimbledon&usg=AOvVaw1i6RYJ5WFD_sAa4WXYw3d8&opi=89978449" class="stretched-link"></a>
                     </div>
-                </div>
+                </article>
 
-                <div class="card mb-3">
+                <article class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Federer recebe homenagem emocionante em torneio suíço</h5>
                         <p class="card-text">Multidão celebra a carreira do maior ídolo do tênis na Basileia.</p>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj_se2qgMeNAxW6F7kGHV__ACIQvOMEKAB6BAgTEAE&url=https%3A%2F%2Fge.globo.com%2Ftenis%2Fnoticia%2F2025%2F05%2F25%2Frafael-nadal-recebe-homenagem-emocionante-em-roland-garros-com-presenca-de-djoko-federer-e-murray.ghtml&usg=AOvVaw11tTf3LfTP6jeGAjYirYmj&opi=89978449" class="stretched-link"></a>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
 
-            <div class="col-lg-4">
-                <div class="section-title">Mais Lidas</div>
+            <aside class="col-lg-4">
+                <h2 class="section-title">Tópicos Mais Vistos</h2>
                 <ul class="list-group">
                     <li class="list-group-item">Australian Open tem surpresas nas primeiras rodadas</li>
                     <li class="list-group-item">Ranking da ATP tem mudanças no top 5</li>
@@ -149,48 +175,48 @@
                     <li class="list-group-item">US Open anuncia premiação recorde</li>
                     <li class="list-group-item">Lendas do tênis se reúnem em evento beneficente</li>
                 </ul>
-            </div>
-        </div>
+            </aside>
+        </section>
 
-        <div class="container mt-5">
+        <section class="mt-5">
             <h3 class="mb-4">Vídeos em Destaque</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <a href=https://youtu.be/MzfrSnpzE4k target="_blank" class="text-decoration-none text-dark">
-                        <div class="card h-100">
-                            <img src=https://www.jornaldocomercio.com/_midias/jpg/2025/03/23/760x541/1_afp__20250323__2206419476__v2__highres__miamiopenpresentedbyitau2025day5-11086700.jpg class="card-img-top" alt="Vídeo João Fonseca"height="290">
+                <article class="col">
+                <a href="https://youtu.be/MzfrSnpzE4k" target="_blank" class="text-decoration-none text-dark">
+                <div class="card h-100 video-card-hover">
+                            <img src="https://www.jornaldocomercio.com/_midias/jpg/2025/03/23/760x541/1_afp__20250323__2206419476__v2__highres__miamiopenpresentedbyitau2025day5-11086700.jpg" class="card-img-top" alt="Vídeo João Fonseca" height="290">
                             <div class="card-body">
                                 <h5 class="card-title">João Fonseca no circuito europeu</h5>
                                 <p class="card-text">JOÃO FONSECA ATROPELA dinamarquês e estreia com vitória no Madrid Open.</p>
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col">
-                    <a href=https://youtu.be/ep3lgA1ryUA?si=HvJO_lpn1t6-82dG target="_blank" class="text-decoration-none text-dark">
+                </article>
+                <article class="col">
+                    <a href="https://youtu.be/ep3lgA1ryUA?si=HvJO_lpn1t6-82dG" target="_blank" class="text-decoration-none text-dark">
                         <div class="card h-100">
-                            <img src=https://tenisbrasil.uol.com.br/wp-content/uploads/2024/05/bia-slice-nottingham-2022-1024x662.jpeg class="card-img-top" alt="Bia Haddad"height="290">
+                            <img src="https://tenisbrasil.uol.com.br/wp-content/uploads/2024/05/bia-slice-nottingham-2022-1024x662.jpeg" class="card-img-top" alt="Bia Haddad" height="290">
                             <div class="card-body">
                                 <h5 class="card-title">Bia Haddad domina a grama</h5>
                                 <p class="card-text">A tenista brasileira mostra evolução na temporada de grama.</p>
                             </div>
                         </div>
                     </a>
-                </div>
-                <div class="col">
-                    <a href=https://youtu.be/u1Lp_jtwTB4?si=jL3wOsTOSJ2sssKm target="_blank" class="text-decoration-none text-dark">
+                </article>
+                <article class="col">
+                    <a href="https://youtu.be/u1Lp_jtwTB4?si=jL3wOsTOSJ2sssKm" target="_blank" class="text-decoration-none text-dark">
                         <div class="card h-100">
-                            <img src=https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/dvaahr2iryf3ovw4nl2a class="card-img-top" alt="Disputa insana"height="290">
+                            <img src="https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w960/f_auto/primary/dvaahr2iryf3ovw4nl2a" class="card-img-top" alt="Disputa insana" height="290">
                             <div class="card-body">
                                 <h5 class="card-title">Djokovic vs Nadal</h5>
                                 <p class="card-text">Rafael Nadal e Novak Djokovic jogam game ABSURDO DE MAIS DE 13 MINUTOS EM ROLAND GARROS!</p>
                             </div>
                         </div>
                     </a>
-                </div>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Notícia Direta - Todos os direitos reservados</p>

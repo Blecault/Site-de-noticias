@@ -56,6 +56,28 @@
             background-color: rgba(0, 0, 0, 0.4);
             padding: 10px;
             border-radius: 5px;
+        } 
+        .col {
+            transition: 0.6s;
+            margin-top: 20px;
+        }
+        .col:hover {
+            transform: scale(1.05);
+            transition: 0.6s;
+        }
+         .mb-3 {
+            transition: 0.6s;
+            margin-top: 15px;
+        }
+        .mb-3:hover {
+            transform: scale(1.05);
+            transition: 0.6s;
+            background-color: #E57206;
+            
+            color: white;
+        }
+        .section-title {
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -72,71 +94,76 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="teste.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="futebol.html">Futebol</a></li>
                     <li class="nav-item"><a class="nav-link active" href="basquete.html">Basquete</a></li>
                     <li class="nav-item"><a class="nav-link" href="volei.html">Vôlei</a></li>
                     <li class="nav-item"><a class="nav-link" href="tenis.html">Tênis</a></li>
                     <li class="nav-item"><a class="nav-link" href="automobilismo.html">Automobilismo</a></li>
                     <li class="nav-item"><a class="nav-link" href="lutas.html">Lutas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sugestao">Sugira uma Notícia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#sugestao">Sugira uma Notícia</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="container mt-4">
-        <div id="carouselBasquete" class="carousel slide mb-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/lebron-james-lakers-e1708371852576.jpeg?w=1024" class="d-block w-100" alt="LeBron James" width="1170" height="700">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>LeBron James abre o jogo sobre aposentadoria e pensa em turnê de despedida</h5>
+    <main class="container mt-4">
+        <section id="destaques">
+            <div id="carouselBasquete" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/lebron-james-lakers-e1708371852576.jpeg?w=1024" class="d-block w-100" alt="LeBron James" width="1170" height="700">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LeBron James abre o jogo sobre aposentadoria e pensa em turnê de despedida</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://a.espncdn.com/media/motion/2025/0404/ss_20250403_230444341_282663650/ss_20250403_230444341_282663650.jpg" class="d-block w-100" alt="Partida intensa" width="1170" height="700">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Partida tensa entre Warriors e Lakers termina nos segundos finais</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://imagens.ebc.com.br/Sv-n5pzQPI7eMntuEdqVci7mBe0=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/07/02/brasil_pre-olimpico_basquete_2024.jpeg?itok=k1AXwTFM" class="d-block w-100" alt="Seleção brasileira" width="1170" height="700">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Time do Brasil pronto para oque vier nas olimpiadas</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://a.espncdn.com/media/motion/2025/0404/ss_20250403_230444341_282663650/ss_20250403_230444341_282663650.jpg" class="d-block w-100" alt="Partida intensa" width="1170" height="700">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Partida tensa entre Warriors e Lakers termina nos segundos finais</h5>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://imagens.ebc.com.br/Sv-n5pzQPI7eMntuEdqVci7mBe0=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/07/02/brasil_pre-olimpico_basquete_2024.jpeg?itok=k1AXwTFM" class="d-block w-100" alt="Seleção brasileira" width="1170" height="700">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Time do Brasil pronto para oque vier nas olimpiadas</h5>
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselBasquete" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselBasquete" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBasquete" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselBasquete" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-        </div>
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="section-title">Notícias Recentes</div>
-                <div class="card mb-3">
+        </section>
+        <section class="row">
+            <section class="col-lg-8" aria-labelledby="noticias-recentes">
+                <h2 class="section-title" id="noticias-recentes">Notícias Recentes</h2>
+                <article class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">LeBron bate mais um recorde na NBA</h5>
                         <p class="card-text">O veterano segue fazendo história. Em jogo contra os Suns, LeBron marcou 36 pontos e ultrapassou outra marca importante da liga.</p>
+                         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj4stjI-8aNAxUpIbkGHch9AbsQFnoECBYQAw&url=https%3A%2F%2Fnoticias.uol.com.br%2Fultimas-noticias%2Fafp%2F2025%2F03%2F05%2Flebron-james-se-torna-o-primeiro-jogador-da-historia-da-nba-a-marcar-50000-pontos.htm%23%3A~%3Atext%3DLeBron%252C%2520em%2520sua%252020%25C2%25AA%2520temporada%2CSuns%252C%2520que%2520soma%252035.225%2520pontos.&usg=AOvVaw16xmk-vx3SgND8eZc6L7QN&opi=89978449" class="stretched-link"></a>
                     </div>
-                </div>
-                <div class="card mb-3">
+                </article>
+                <article class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Flamengo x Franca: jogo eletrizante no NBB</h5>
                         <p class="card-text">Os dois favoritos do Novo Basquete Brasil protagonizaram um dos jogos mais emocionantes da temporada até agora.</p>
+                         <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjwkZfr-8aNAxWjLrkGHSBjADcQFnoECEEQAQ&url=https%3A%2F%2Fge.globo.com%2Fbasquete%2Fnoticia%2F2025%2F05%2F27%2Ffranca-bate-o-flamengo-fora-de-casa-e-deixa-tudo-igual-na-serie-da-semifinal-do-nbb.ghtml&usg=AOvVaw2LaoGKVCvgfdF8yWHJT2F1&opi=89978449" class="stretched-link"></a>
                     </div>
-                </div>
-                <div class="card mb-3">
+                </article>
+                <article class="card mb-3">
                     <div class="card-body">
                         <h5 class="card-title">Basquete feminino ganha mais espaço</h5>
                         <p class="card-text">A WNBA iniciou a nova temporada com ótimos números de audiência, mostrando o crescimento da liga nos EUA e no mundo.</p>
+                        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwigv5-L_MaNAxVXIbkGHUcFM-cQFnoECBcQAQ&url=https%3A%2F%2Fwww.portaltela.com%2Fesportes%2Fesportes-americanos%2F2025%2F05%2F15%2Fwnba-inicia-temporada-historica-com-crescimento-de-audiencia-e-novos-investimentos&usg=AOvVaw32aF5GbWcLVpw2LcD4i_An&opi=89978449" class="stretched-link"></a>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="section-title">Mais Lidas</div>
+                </article>
+            </section>
+            <aside class="col-lg-4" aria-labelledby="mais-lidas">
+                <h2 class="section-title" id="mais-lidas">Tópicos Mais Vistos</h2>
                 <ul class="list-group">
                     <li class="list-group-item">Gui Santos surpreende técnico dos Warriors</li>
                     <li class="list-group-item">Brasil vence Argentina no Sul-Americano</li>
@@ -144,47 +171,47 @@
                     <li class="list-group-item">Jovem do NBB é cogitado por time europeu</li>
                     <li class="list-group-item">Final do NBB será no Maracanãzinho</li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container mt-5">
-        <h3 class="mb-4">Vídeos em Destaque</h3>
+            </aside>
+        </section>
+    </main>
+    <section class="container mt-5" aria-labelledby="videos-destaque">
+        <h3 class="mb-4" id="videos-destaque">Vídeos em Destaque</h3>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+            <article class="col">
                 <a href="https://youtu.be/CjDb9AzKCNQ?si=XhuBh7Jqef0jsa1E" target="_blank" class="text-decoration-none text-dark">
                     <div class="card h-100">
-                        <img src="https://www.reuters.com/resizer/v2/YTE2ORHGVNM4ZDVZFGBSVFHR5A.jpg?auth=2d43810ccb4b6e7b1490fad62fa3976beb40daf2f2ef786a126ad92e9795d5c9&width=4024&quality=80" class="card-img-top" alt="" height="290">
+                        <img src="https://www.reuters.com/resizer/v2/YTE2ORHGVNM4ZDVZFGBSVFHR5A.jpg?auth=2d43810ccb4b6e7b1490fad62fa3976beb40daf2f2ef786a126ad92e9795d5c9&width=4024&quality=80" class="card-img-top" alt="Shai" height="290">
                         <div class="card-body">
                             <h5 class="card-title">Shai dá assistência mesmo caído no chão e impressiona em vitória do Thunder</h5>
                             <p class="card-text">Astro do Oklahoma City Thunder liderou a vitória da franquia sobre o Minnesota Timberwolves com 40 pontos no jogo 4 da final do Oeste.</p>
                         </div>
                     </div>
                 </a>
-            </div>
-            <div class="col">
+            </article>
+            <article class="col">
                 <a href="https://youtu.be/xyKs8-b4xxg?si=v1HAb54FI9NgthVn" target="_blank" class="text-decoration-none text-dark">
                     <div class="card h-100">
-                        <img src="https://img.youtube.com/vi/xyKs8-b4xxg/hqdefault.jpg" class="card-img-top" alt="" height="290">
+                        <img src="https://img.youtube.com/vi/xyKs8-b4xxg/hqdefault.jpg" class="card-img-top" alt="Minas vs Bauru" height="290">
                         <div class="card-body">
                             <h5 class="card-title">Minas vira no fim, bate Bauru Basket e fica a uma vitória da final do NBB</h5>
                             <p class="card-text">Mineiros revertem desvantagem de oito pontos no quarto período e abrem 2 a 0 na semifinal</p>
                         </div>
                     </div>
                 </a>
-            </div>
-            <div class="col">
+            </article>
+            <article class="col">
                 <a href="https://youtu.be/K-fEAsGxyFw?si=gS4cr7haSUjFzZpQ" target="_blank" class="text-decoration-none text-dark">
                     <div class="card h-100">
-                        <img src="https://s2-ge.glbimg.com/qRT1Ctd4uz3dz8-hzLdpNHkkOvY=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/Y/c/T0B5h4TayFxXXe1Wbz5w/gettyimages-2217047749.jpg" class="card-img-top" alt="" height="290">
+                        <img src="https://s2-ge.glbimg.com/qRT1Ctd4uz3dz8-hzLdpNHkkOvY=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/Y/c/T0B5h4TayFxXXe1Wbz5w/gettyimages-2217047749.jpg" class="card-img-top" alt="Finais da Leste" height="290">
                         <div class="card-body">
                             <h5 class="card-title">Finais do Leste têm três jogos decididos por seis pontos ou menos pela primeira vez desde 2009</h5>
                             <p class="card-text">Com placares apertados até aqui, disputa entre Knicks e Pacers é a mais acirrada em uma final de conferência em 16 anos</p>
                         </div>
                     </div>
                 </a>
-            </div>
+            </article>
         </div>
-    </div>
+    </section>
     <footer>
         <p>&copy; 2025 Notícia Direta - Todos os direitos reservados</p>
     </footer>
