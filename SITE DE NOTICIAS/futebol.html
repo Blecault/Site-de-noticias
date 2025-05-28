@@ -143,33 +143,44 @@
         </div>
     </div>
 
-    <!-- Sugestão -->
-    <div class="row mt-5" id="sugestao">
-        <div class="col-12">
-            <div class="section-title">Sugira uma Notícia</div>
-            <p>Tem uma notícia quente sobre futebol? Envie pra gente!</p>
-            <form onsubmit="event.preventDefault(); alert('Obrigado pela sugestão!'); this.reset();">
-                <div class="mb-3">
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="nome" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="mb-3">
-                    <label for="titulo" class="form-label">Título da Sugestão</label>
-                    <input type="text" class="form-control" id="titulo" required>
-                </div>
-                <div class="mb-3">
-                    <label for="mensagem" class="form-label">Descrição</label>
-                    <textarea class="form-control" id="mensagem" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-dark">Enviar</button>
-            </form>
+  <div class="container mt-5">
+        <h3 class="mb-4">Vídeos em Destaque</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <a href="https://www.youtube.com/watch?v=1Uwq98oT0dk" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="https://cdn.s1live.com/posts/22-05-2025-16-28-37-1538-10242.jpg" class="card-img-top" alt="" height="290">
+                        <div class="card-body">
+                            <h5 class="card-title">Fla vence com goleiro herói, pênaltis polêmicos e cola no líder Palmeiras.</h5>
+                            <p class="card-text">Flamengo faz jogo inteligente, mostra força do elenco e deixa recado para o Palmeiras</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.youtube.com/watch?v=i_tOOY-F1ho&feature=onebox" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="https://s2-cbn.glbimg.com/j6YDBAUG2CTzJtcxmeX-sWhoWYM=/0x0:964x548/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_d975fad146a14bbfad9e763717b09688/internal_photos/bs/2025/n/R/WU2x7EQO2CgHB5zpQIdw/corinthians.png" alt="" height="290">
+                        <div class="card-body">
+                            <h5 class="card-title">Corinthians perde do Huracán e dá adeus à Sul-Americana após gol do América de Cali nos acréscimos</h5>
+                            <p class="card-text">Corinthians joga mal, perde para o Huracán, dá azar e é eliminado na Sul-Americana</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="https://www.youtube.com/watch?v=iA4_eg3TGhk" target="_blank" class="text-decoration-none text-dark">
+                    <div class="card h-100">
+                        <img src="https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1FEEFO.img?w=768&h=480&m=6&x=1141&y=378&s=544&d=544" class="card-img-top" alt="" height="290">
+                        <div class="card-body">
+                            <h5 class="card-title">Atleta do São Paulo, Bobadilla se defende após acusação de xenofobia na Libertadores</h5>
+                            <p class="card-text">Venezuelano morto de fome.’ Jogador do Talleres garante ter sido vítima de xenofobia. E promete processar Bobadilla, do São Paulo</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
-</div>
 
 <footer>
     <p>&copy; 2025 Notícia Direta - Todos os direitos reservados</p>
